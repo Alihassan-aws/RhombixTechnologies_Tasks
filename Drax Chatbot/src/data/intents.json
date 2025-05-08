@@ -1,0 +1,120 @@
+{
+  "intents": [
+    {
+      "name": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "what's up",
+        "sup",
+        "howdy",
+        "greetings"
+      ],
+      "responses": [
+        "Hello! I'm Drax, how can I assist you today?",
+        "Hi there! I'm Drax, your AI assistant. What can I help you with?",
+        "Hey! Nice to meet you. I'm Drax, ready to help with anything you need.",
+        "Greetings! I'm Drax. How may I be of service today?"
+      ]
+    },
+    {
+      "name": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "see ya",
+        "later",
+        "have a good day",
+        "have a nice day",
+        "talk to you later"
+      ],
+      "responses": [
+        "Goodbye! Feel free to chat anytime you need assistance.",
+        "See you later! Have a great day!",
+        "Bye for now! Come back soon if you need help.",
+        "Take care! I'll be here when you return."
+      ]
+    },
+    {
+      "name": "thanks",
+      "patterns": [
+        "thank you",
+        "thanks",
+        "appreciate it",
+        "thank you so much",
+        "thanks a lot",
+        "thank you very much"
+      ],
+      "responses": [
+        "You're welcome! I'm happy to help.",
+        "Anytime! That's what I'm here for.",
+        "My pleasure! Is there anything else you need?",
+        "You're very welcome. Feel free to ask if you need anything else."
+      ]
+    },
+    {
+      "name": "help",
+      "patterns": [
+        "help",
+        "I need help",
+        "can you help me",
+        "what can you do",
+        "how do you work",
+        "how to use",
+        "what are your features"
+      ],
+      "responses": [
+        "I can help with answering questions, providing information, or just chatting. What do you need assistance with?",
+        "As Drax, I can have conversations, answer questions, and provide useful information. What would you like to know?",
+        "I'm here to assist you with information and conversation. Just type your question or topic, and I'll respond accordingly."
+      ]
+    },
+    {
+      "name": "about",
+      "patterns": [
+        "who are you",
+        "what is drax",
+        "tell me about yourself",
+        "what's your name",
+        "who made you",
+        "who created you"
+      ],
+      "responses": [
+        "I'm Drax, an AI chatbot created by Ali Hassan. I'm designed to be helpful, informative, and engaging in conversation.",
+        "My name is Drax, an AI assistant developed by Ali Hassan. I'm here to provide information and assistance through natural conversation.",
+        "I'm Drax, a conversational AI built by Ali Hassan. I'm programmed to be helpful, friendly, and informative."
+      ]
+    },
+    {
+      "name": "premium",
+      "patterns": [
+        "premium features",
+        "premium account",
+        "upgrade",
+        "paid features",
+        "premium version",
+        "what's in premium"
+      ],
+      "responses": [
+        "Premium features include faster response times, more personalized answers, and access to exclusive content. Would you like to know more about upgrading?",
+        "With a premium account, you get priority support, personalized insights, and advanced capabilities. Interested in upgrading?",
+        "Premium members enjoy enhanced features like deeper conversations, personalized learning, and priority responses. Ready to upgrade your experience?"
+      ]
+    },
+    {
+      "name": "fallback",
+      "patterns": [],
+      "responses": [
+        "I'm not sure I understand. Could you rephrase that?",
+        "I don't have an answer for that yet. Could you try asking something else?",
+        "I'm still learning and don't have a response for that query. Is there something else I can help with?",
+        "I didn't quite catch that. Could you explain or ask in a different way?"
+      ]
+    }
+  ]
+}
