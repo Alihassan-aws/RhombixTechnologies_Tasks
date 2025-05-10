@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300;
+    font-family: 'Inter', sans-serif;
+  }
+
+  ::selection {
+    @apply bg-primary-200 dark:bg-primary-700;
+  }
+}
+
+@layer components {
+  .message-bubble {
+    @apply p-4 rounded-lg max-w-[85%] break-words animate-fade-in;
+  }
+
+  .user-message {
+    @apply bg-gradient-to-br from-secondary-500 to-secondary-600 text-white ml-auto;
+  }
+
+  .bot-message {
+    @apply bg-gradient-to-br from-primary-100 to-primary-200 dark:from-primary-900 dark:to-primary-800 text-primary-900 dark:text-primary-100 mr-auto;
+  }
+
+  .button-base {
+    @apply inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 transform hover:-translate-y-0.5;
+  }
+
+  .button-primary {
+    @apply button-base bg-gradient-to-r from-primary-500 to-secondary-500 text-white hover:from-primary-600 hover:to-secondary-600 focus-visible:ring-primary-500;
+  }
+
+  .button-secondary {
+    @apply button-base bg-gray-100 text-gray-900 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600 focus-visible:ring-gray-500;
+  }
+
+  .button-danger {
+    @apply button-base bg-error-500 text-white hover:bg-error-700 focus-visible:ring-error-500;
+  }
+
+  .premium-badge {
+    @apply inline-flex items-center rounded-full bg-gradient-to-r from-accent-400 to-secondary-400 px-3 py-1 text-xs font-medium text-white shadow-lg;
+  }
+
+  .typing-dot {
+    @apply inline-block h-2 w-2 rounded-full bg-current;
+  }
+  
+  .typing-dot-1 {
+    @apply animate-typing-dot;
+    animation-delay: 0s;
+  }
+  
+  .typing-dot-2 {
+    @apply animate-typing-dot;
+    animation-delay: 0.2s;
+  }
+  
+  .typing-dot-3 {
+    @apply animate-typing-dot;
+    animation-delay: 0.4s;
+  }
+
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+}
